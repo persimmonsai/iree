@@ -90,7 +90,7 @@ jobs:
           token_format: "access_token"
           credentials_json: "${{ secrets.IREE_OSS_GITHUB_RUNNER_BASIC_TRUST_SERVICE_ACCOUNT_KEY }}"
           create_credentials_file: false
-      # actions/cache is for some reason unusably slow on the large managed
+      # actions/checkout is for some reason unusably slow on the large managed
       # Windows GitHub runners so we roll our own. See
       # https://github.com/actions/checkout/issues/1186
       # TODO(gcmn): Factor this out into something reusable across jobs. Can't
@@ -123,7 +123,7 @@ jobs:
         env:
           IREE_WRITE_REMOTE_CCACHE: ${{ needs.setup.outputs.write-caches }}
           IREE_CCACHE_GCP_TOKEN: ${{ steps.gcp-auth.outputs.access_token }}
-          CCACHE_NAMESPACE: github-windows-2022-64core
+          CCACHE_NAMESPACE: github-windows-2022
         run: |
           ./build_tools/cmake/build_all.sh "${BUILD_DIR}"
       - name: "Testing IREE"
@@ -133,7 +133,7 @@ jobs:
     needs: setup
     if: fromJson(needs.setup.outputs.should-run) && ! fromJson(needs.setup.outputs.is-pr)
     runs-on:
-      - ${{ github.repository == 'openxla/iree' && 'self-hosted' || 'macos-11' }} # must come first
+      - 'self-hosted'
       - runner-group=postsubmit
       - os-family=macOS
     env:
@@ -172,6 +172,13 @@ jobs:
       run:
         shell: bash
     steps:
+      - id: "gcp-auth"
+        name: "Authenticating to Google Cloud"
+        uses: "google-github-actions/auth@v1"
+        with:
+          token_format: "access_token"
+          credentials_json: "${{ secrets.IREE_OSS_GITHUB_RUNNER_BASIC_TRUST_SERVICE_ACCOUNT_KEY }}"
+          create_credentials_file: false
       - name: "Checking out repository"
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
       - name: "Updating git submodules"
@@ -191,14 +198,11 @@ jobs:
       # Finally: build and run tests.
       - name: "Building IREE"
         env:
-          # Note: we would love to use caching here but the GitHub Actions cache
-          # is utterly broken. See https://github.com/actions/cache/issues/1115
-          # and https://github.com/openxla/iree/pull/12905
-          IREE_READ_REMOTE_CCACHE: 0
-          IREE_WRITE_REMOTE_CCACHE: 0
-          IREE_READ_LOCAL_CCACHE: 0
-          IREE_WRITE_LOCAL_CCACHE: 0
-        run: bash ./build_tools/cmake/build_all.sh "${BUILD_DIR}"
+          IREE_WRITE_REMOTE_CCACHE: ${{ needs.setup.outputs.write-caches }}
+          IREE_CCACHE_GCP_TOKEN: ${{ steps.gcp-auth.outputs.access_token }}
+          CCACHE_NAMESPACE: github-macos-12
+        run: |
+          ./build_tools/cmake/build_all.sh "${BUILD_DIR}"
       - name: "Testing IREE"
         run: bash ./build_tools/cmake/ctest_all.sh "${BUILD_DIR}"
 
