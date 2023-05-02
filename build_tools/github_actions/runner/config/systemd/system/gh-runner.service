@@ -11,7 +11,8 @@ Restart=no
 KillMode=process
 KillSignal=SIGTERM
 TimeoutStopSec=5min
-ExecStopPost=/runner-root/config/systemd/scripts/delete_self.sh
+# Disable self-deletion as the runner is not managed by MIG.
+# ExecStopPost=/runner-root/config/systemd/scripts/delete_self.sh
 
 [Install]
 WantedBy=runner-setup.target

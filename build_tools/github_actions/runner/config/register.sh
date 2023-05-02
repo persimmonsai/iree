@@ -109,8 +109,9 @@ set -xe
 
 declare -a args=(
   --unattended \
-  # Shut down after completing a single job
-  --ephemeral \
+  # Set up the temporary runner as persisent since we don't use MIG to create
+  # and destroy runners automatically.
+  # --ephemeral \
   # We don't immediately update each time we start. We handle our own
   # updates instead.
   --disableupdate \
