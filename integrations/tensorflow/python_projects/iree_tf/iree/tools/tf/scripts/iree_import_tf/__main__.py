@@ -94,16 +94,7 @@ def import_saved_model(*, output_path, saved_model_dir, exported_names,
   result = pywrap_mlir.experimental_run_pass_pipeline(result,
                                                       ",".join(pipeline),
                                                       show_debug_info=False)
-
-  # TODO: The experimental_write_bytecode function does not register the
-  # stablehlo dialect. Once fixed, remove this bypass.
-  WRITE_BYTECODE = False
-  if WRITE_BYTECODE:
-    result = pywrap_mlir.experimental_write_bytecode(output_path, result)
-  else:
-    with open(output_path, "wt") as f:
-      f.write(result)
-
+  result = pywrap_mlir.experimental_write_bytecode(output_path, result)
 
 if __name__ == "__main__":
   main()
