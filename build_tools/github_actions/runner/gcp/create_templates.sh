@@ -23,11 +23,11 @@ CPU_IMAGE="${CPU_IMAGE:-github-runner-cpu-2023-06-02-1685725199}"
 CPU_DISK_SIZE_GB="${CPU_DISK_SIZE_GB:-1000}"
 
 PROD_TEMPLATE_CONFIG_REPO="${PROD_TEMPLATE_CONFIG_REPO:-openxla/iree}"
-GITHUB_RUNNER_SCOPE="${GITHUB_RUNNER_SCOPE:-openxla}"
+GITHUB_RUNNER_SCOPE="${GITHUB_RUNNER_SCOPE:-iree-org}"
 
 TEMPLATE_CONFIG_REPO="${TEMPLATE_CONFIG_REPO:-${PROD_TEMPLATE_CONFIG_REPO}}"
 TEMPLATE_CONFIG_REF="${TEMPLATE_CONFIG_REF:-$(git rev-parse HEAD)}"
-TEMPLATE_NAME_PREFIX="${TEMPLATE_NAME_PREFIX:-gh-runner}"
+TEMPLATE_NAME_PREFIX="${TEMPLATE_NAME_PREFIX:-iree-org-runner}"
 
 if (( TESTING==0 )) && ! git merge-base --is-ancestor "${TEMPLATE_CONFIG_REF}" main; then
   echo "Creating testing template because TEMPLATE_CONFIG_REF='${TEMPLATE_CONFIG_REF}' is not on the main branch" >&2
@@ -53,7 +53,7 @@ if (( TESTING!=0 )); then
 fi
 GITHUB_RUNNER_VERSION="${GITHUB_RUNNER_VERSION:-2.304.0}"
 GITHUB_RUNNER_ARCHIVE_DIGEST="${GITHUB_RUNNER_ARCHIVE_DIGEST:-292e8770bdeafca135c2c06cd5426f9dda49a775568f45fcc25cc2b576afc12f}"
-GITHUB_TOKEN_PROXY_URL="${GITHUB_TOKEN_PROXY_URL:-https://ght-proxy-openxla-zbhz5clunq-ue.a.run.app}"
+GITHUB_TOKEN_PROXY_URL="${GITHUB_TOKEN_PROXY_URL:-https://ght-proxy-zbhz5clunq-ue.a.run.app}"
 
 if (( TESTING_SELF_DELETER==1 )); then
   INSTANCE_SELF_DELETER_URL="https://instance-self-deleter-testing-zbhz5clunq-uc.a.run.app"
