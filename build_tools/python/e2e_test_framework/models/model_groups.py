@@ -159,12 +159,7 @@ BERT_LARGE_TF_BATCHES = list(tf_models.BERT_LARGE_384_FP32_TF_BATCHES.values())
 RESNET50_TF_BATCHES = list(
     tf_models.RESNET50_3X224X224_FP32_TF_BATCHES.values())
 
-T5_LARGE_TF_BATCHES = [
-    model
-    for batch_size, model in tf_models.T5_LARGE_512_FP32_TF_BATCHES.items()
-    # Disabled due to https://github.com/openxla/iree/issues/13801.
-    if batch_size != 512
-]
+T5_LARGE_TF_BATCHES = list(tf_models.T5_LARGE_512_FP32_TF_BATCHES.values())
 
 # Batched JAX models.
 
