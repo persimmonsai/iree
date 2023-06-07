@@ -814,113 +814,113 @@ iree_bytecode_module(
 
 iree_bytecode_module(
   NAME
-    "iree-module-04ca0a5077b7dd5ace66d803c9b822dff3428b24e7620a61995aff0907af9533"
+    "iree-module-bf4bda91fb17ec7f3402e7b301cb3ab0b7a9b0b00d8cee29fd4cfa46262a5ea1"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_ebe7897f-5613-435b-a330-3cb967704e5e_EfficientNetV2STF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-1_T5LargeTFBatch1.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_EfficientNetV2STF_module_04ca0a5077b7dd5ace66d803c9b822dff3428b24e7620a61995aff0907af9533/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch1_module_bf4bda91fb17ec7f3402e7b301cb3ab0b7a9b0b00d8cee29fd4cfa46262a5ea1/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "EfficientNetV2STF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch1(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-deafafd0926321a4b8e4dc73ed4a30b2ed9317d26488246461415be2ee857eb1"
+    "iree-module-9900b1a0c52b31fc38f1d82ff088102f7131ecbb3fc1b8274929481337d031c5"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_ecf5c970-ee97-49f0-a4ed-df1f34e9d493_MiniLML12H384Uncased.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-16_T5LargeTFBatch16.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_MiniLML12H384Uncased_module_deafafd0926321a4b8e4dc73ed4a30b2ed9317d26488246461415be2ee857eb1/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch16_module_9900b1a0c52b31fc38f1d82ff088102f7131ecbb3fc1b8274929481337d031c5/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "MiniLML12H384Uncased(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch16(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-bdd904cc5614ebf77609c7802a2dfc09f139aee2a247a247d10d320de72b0e28"
+    "iree-module-25f1a116fad68b01401dfbd8462c7b2729ef2d504df0954509cd488cd5da17a1"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_39d157ad-f0ec-4a76-963b-d783beaed60f_BertForMaskedLMTF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-24_T5LargeTFBatch24.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_BertForMaskedLMTF_module_bdd904cc5614ebf77609c7802a2dfc09f139aee2a247a247d10d320de72b0e28/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch24_module_25f1a116fad68b01401dfbd8462c7b2729ef2d504df0954509cd488cd5da17a1/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "BertForMaskedLMTF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch24(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-45565cae821666fd34bca97be2e4cce3bd61e71308785728737d89acbb9bc9d2"
+    "iree-module-89643b9db9da0c7b822ba8e2ead4ec12fc3093dbde9b7a8570de1be3d46bd54b"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_8871f602-571c-4eb8-b94d-554cc8ceec5a_BertLargeTF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-32_T5LargeTFBatch32.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_BertLargeTF_module_45565cae821666fd34bca97be2e4cce3bd61e71308785728737d89acbb9bc9d2/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch32_module_89643b9db9da0c7b822ba8e2ead4ec12fc3093dbde9b7a8570de1be3d46bd54b/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "BertLargeTF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch32(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-c4b43b31944dbd567e48efacfdb33f707eb248538cf70fa7dcf1085c6c7dbd3f"
+    "iree-module-c16715c83936394998fe81f8d33f6e7901f17ff662dfd2941a3982f85c3a9e17"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_9a9515c7-cb68-4c34-b1d2-0e8c0a3620b8_ClipTextSeqLen64PT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-48_T5LargeTFBatch48.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_ClipTextSeqLen64PT_module_c4b43b31944dbd567e48efacfdb33f707eb248538cf70fa7dcf1085c6c7dbd3f/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch48_module_c16715c83936394998fe81f8d33f6e7901f17ff662dfd2941a3982f85c3a9e17/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "ClipTextSeqLen64PT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch48(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-c8ec2db5ee884e0af17814e61b13d7f7f1f2d4f7028e8c1920d0d968c27de2bb"
+    "iree-module-7ba873f0f155e857b45f991cbb4e8776f8b137d59ddc5f81a7a23ed2a48eecc9"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_340553d1-e6fe-41b6-b2c7-687c74ccec56_Unet2dPT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-64_T5LargeTFBatch64.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_Unet2dPT_module_c8ec2db5ee884e0af17814e61b13d7f7f1f2d4f7028e8c1920d0d968c27de2bb/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch64_module_7ba873f0f155e857b45f991cbb4e8776f8b137d59ddc5f81a7a23ed2a48eecc9/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "Unet2dPT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch64(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-9470c46965ea67794da45496454c82eade29b5a519d8037b1314738621e02260"
+    "iree-module-374d3219ba3a0064fc5eccb0857f9ae7c37ad2c8183c930b59b33a6a6248d109"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_68caa96e-b8bb-48a2-bb08-a3044981a370_EfficientNetB7PT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-512_T5LargeTFBatch512.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_EfficientNetB7PT_module_9470c46965ea67794da45496454c82eade29b5a519d8037b1314738621e02260/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch512_module_374d3219ba3a0064fc5eccb0857f9ae7c37ad2c8183c930b59b33a6a6248d109/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
   FRIENDLY_NAME
-    "EfficientNetB7PT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags]"
+    "T5LargeTFBatch512(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags]"
   PUBLIC
 )
 
@@ -3845,11 +3845,11 @@ iree_bytecode_module(
 
 iree_bytecode_module(
   NAME
-    "iree-module-25ad2815eb690276e9c2183aaafaf17a3df734bb6164071ad92dbf1e7faf7509"
+    "iree-module-1ee530ad72c5711ee3abf11b27eed04e11d261fb6c0d23a6cb68c80c1a42580b"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_ebe7897f-5613-435b-a330-3cb967704e5e_EfficientNetV2STF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-1_T5LargeTFBatch1.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_EfficientNetV2STF_module_25ad2815eb690276e9c2183aaafaf17a3df734bb6164071ad92dbf1e7faf7509/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch1_module_1ee530ad72c5711ee3abf11b27eed04e11d261fb6c0d23a6cb68c80c1a42580b/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
@@ -3857,19 +3857,19 @@ iree_bytecode_module(
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_EfficientNetV2STF_module_25ad2815eb690276e9c2183aaafaf17a3df734bb6164071ad92dbf1e7faf7509/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch1_module_1ee530ad72c5711ee3abf11b27eed04e11d261fb6c0d23a6cb68c80c1a42580b/scheduling_stats.json"
   FRIENDLY_NAME
-    "EfficientNetV2STF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch1(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-65586f1e5b51439dd951529c35fa9000a928f90039cc6cfb66d5c81d07a6c62b"
+    "iree-module-38e99a06cd01399fe48cd9d860f65474e4fd7df1b3aca491766ff5f825315a79"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_ecf5c970-ee97-49f0-a4ed-df1f34e9d493_MiniLML12H384Uncased.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-16_T5LargeTFBatch16.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_MiniLML12H384Uncased_module_65586f1e5b51439dd951529c35fa9000a928f90039cc6cfb66d5c81d07a6c62b/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch16_module_38e99a06cd01399fe48cd9d860f65474e4fd7df1b3aca491766ff5f825315a79/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
@@ -3877,19 +3877,19 @@ iree_bytecode_module(
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_MiniLML12H384Uncased_module_65586f1e5b51439dd951529c35fa9000a928f90039cc6cfb66d5c81d07a6c62b/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch16_module_38e99a06cd01399fe48cd9d860f65474e4fd7df1b3aca491766ff5f825315a79/scheduling_stats.json"
   FRIENDLY_NAME
-    "MiniLML12H384Uncased(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch16(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-8b19868be1c797cb585551c871c4171e78817e0efc49d30d91b9d722be283de9"
+    "iree-module-db86dfb7ef5e59b31bf513df65fffd397f49e3fe3b5c03149140ccf3b6b2f821"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_39d157ad-f0ec-4a76-963b-d783beaed60f_BertForMaskedLMTF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-24_T5LargeTFBatch24.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_BertForMaskedLMTF_module_8b19868be1c797cb585551c871c4171e78817e0efc49d30d91b9d722be283de9/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch24_module_db86dfb7ef5e59b31bf513df65fffd397f49e3fe3b5c03149140ccf3b6b2f821/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
@@ -3897,19 +3897,19 @@ iree_bytecode_module(
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_BertForMaskedLMTF_module_8b19868be1c797cb585551c871c4171e78817e0efc49d30d91b9d722be283de9/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch24_module_db86dfb7ef5e59b31bf513df65fffd397f49e3fe3b5c03149140ccf3b6b2f821/scheduling_stats.json"
   FRIENDLY_NAME
-    "BertForMaskedLMTF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch24(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-c2085883b1f5c767f37508ab998a4bcd17d169fe6a5197d28e4dca8772c90253"
+    "iree-module-89966a2ac764b543e721d822acdbe015526866e0a8d56a6782f240eeb3cddea1"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_8871f602-571c-4eb8-b94d-554cc8ceec5a_BertLargeTF.timestamp_1683504734.mlirbc"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-32_T5LargeTFBatch32.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_BertLargeTF_module_c2085883b1f5c767f37508ab998a4bcd17d169fe6a5197d28e4dca8772c90253/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch32_module_89966a2ac764b543e721d822acdbe015526866e0a8d56a6782f240eeb3cddea1/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
     "--iree-input-type=stablehlo"
@@ -3917,69 +3917,69 @@ iree_bytecode_module(
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_BertLargeTF_module_c2085883b1f5c767f37508ab998a4bcd17d169fe6a5197d28e4dca8772c90253/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch32_module_89966a2ac764b543e721d822acdbe015526866e0a8d56a6782f240eeb3cddea1/scheduling_stats.json"
   FRIENDLY_NAME
-    "BertLargeTF(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch32(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-88b6b5f712cd2f40d07a136e7f911c05b976c390e07f104c970292dee9a77e9a"
+    "iree-module-6da0542e65f9e5eff1bc142506866aec435b931b36eb8e86139f79b4945863fd"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_9a9515c7-cb68-4c34-b1d2-0e8c0a3620b8_ClipTextSeqLen64PT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-48_T5LargeTFBatch48.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_ClipTextSeqLen64PT_module_88b6b5f712cd2f40d07a136e7f911c05b976c390e07f104c970292dee9a77e9a/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch48_module_6da0542e65f9e5eff1bc142506866aec435b931b36eb8e86139f79b4945863fd/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_ClipTextSeqLen64PT_module_88b6b5f712cd2f40d07a136e7f911c05b976c390e07f104c970292dee9a77e9a/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch48_module_6da0542e65f9e5eff1bc142506866aec435b931b36eb8e86139f79b4945863fd/scheduling_stats.json"
   FRIENDLY_NAME
-    "ClipTextSeqLen64PT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch48(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-925cdb19f2aa31a1907c81b5a9e179d91280c77b08a039c1cbf146f71683dde9"
+    "iree-module-f55259e9c9778885d48b20cfb18242984fa9dde9840fa0f92c7de379c88c8230"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_340553d1-e6fe-41b6-b2c7-687c74ccec56_Unet2dPT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-64_T5LargeTFBatch64.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_Unet2dPT_module_925cdb19f2aa31a1907c81b5a9e179d91280c77b08a039c1cbf146f71683dde9/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch64_module_f55259e9c9778885d48b20cfb18242984fa9dde9840fa0f92c7de379c88c8230/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_Unet2dPT_module_925cdb19f2aa31a1907c81b5a9e179d91280c77b08a039c1cbf146f71683dde9/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch64_module_f55259e9c9778885d48b20cfb18242984fa9dde9840fa0f92c7de379c88c8230/scheduling_stats.json"
   FRIENDLY_NAME
-    "Unet2dPT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch64(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
 iree_bytecode_module(
   NAME
-    "iree-module-3c94ab45ad76bd8b2083729b65340b987da3247c854faf7d06431cb05a3b0a23"
+    "iree-module-d931d256d015f057a71fb67c6c7d7d4099910286d5bbcd6c1c71b43b2b3756e8"
   SRC
-    "${ROOT_ARTIFACTS_DIR}/model_68caa96e-b8bb-48a2-bb08-a3044981a370_EfficientNetB7PT.mlir"
+    "${ROOT_ARTIFACTS_DIR}/model_587e595d-2adf-4e41-9617-43178a133725-batch-512_T5LargeTFBatch512.mlirbc"
   MODULE_FILE_NAME
-    "${ROOT_ARTIFACTS_DIR}/iree_EfficientNetB7PT_module_3c94ab45ad76bd8b2083729b65340b987da3247c854faf7d06431cb05a3b0a23/module.vmfb"
+    "${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch512_module_d931d256d015f057a71fb67c6c7d7d4099910286d5bbcd6c1c71b43b2b3756e8/module.vmfb"
   FLAGS
     "--iree-hal-target-backends=cuda"
-    "--iree-input-type=none"
+    "--iree-input-type=stablehlo"
     "--iree-hal-cuda-llvm-target-arch=sm_80"
     "--iree-vm-emit-polyglot-zip=true"
     "--iree-llvmcpu-debug-symbols=false"
     "--iree-scheduling-dump-statistics-format=json"
-    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_EfficientNetB7PT_module_3c94ab45ad76bd8b2083729b65340b987da3247c854faf7d06431cb05a3b0a23/scheduling_stats.json"
+    "--iree-scheduling-dump-statistics-file=${ROOT_ARTIFACTS_DIR}/iree_T5LargeTFBatch512_module_d931d256d015f057a71fb67c6c7d7d4099910286d5bbcd6c1c71b43b2b3756e8/scheduling_stats.json"
   FRIENDLY_NAME
-    "EfficientNetB7PT(linalg) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
+    "T5LargeTFBatch512(stablehlo) [cuda-sm_80-linux_gnu-cuda][default-flags,compile-stats]"
   PUBLIC
 )
 
@@ -6544,8 +6544,10 @@ add_dependencies(iree-benchmark-import-models
   ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-1
   ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-16
   ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-32
-  ${PACKAGE_NAME}_model-9a9515c7-cb68-4c34-b1d2-0e8c0a3620b8
-  ${PACKAGE_NAME}_model-340553d1-e6fe-41b6-b2c7-687c74ccec56
+  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-24
+  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-48
+  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-64
+  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-512
   ${PACKAGE_NAME}_model-50a7aece-73f9-47f4-a93a-4a1178f45407
   ${PACKAGE_NAME}_model-a55afe1c-9410-47a6-b417-04b0d75ee5f4
   ${PACKAGE_NAME}_model-81cebaaf-e23d-4a32-89dc-9fc7adc37a8f
@@ -6561,10 +6563,6 @@ add_dependencies(iree-benchmark-import-models
   ${PACKAGE_NAME}_model-5f3de3b3-fd00-4582-a97e-b70ff5edab07-batch-512
   ${PACKAGE_NAME}_model-5f3de3b3-fd00-4582-a97e-b70ff5edab07-batch-1024
   ${PACKAGE_NAME}_model-5f3de3b3-fd00-4582-a97e-b70ff5edab07-batch-1280
-  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-24
-  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-48
-  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-64
-  ${PACKAGE_NAME}_model-587e595d-2adf-4e41-9617-43178a133725-batch-512
   ${PACKAGE_NAME}_model-cbc5e400-7c93-4844-aca8-bce8f1bf9948-batch-1
   ${PACKAGE_NAME}_model-cbc5e400-7c93-4844-aca8-bce8f1bf9948-batch-16
   ${PACKAGE_NAME}_model-cbc5e400-7c93-4844-aca8-bce8f1bf9948-batch-24
@@ -6580,6 +6578,8 @@ add_dependencies(iree-benchmark-import-models
   ${PACKAGE_NAME}_model-fd05da43-5e37-4fa0-88f8-3ceec1682345-batch-128
   ${PACKAGE_NAME}_model-fd05da43-5e37-4fa0-88f8-3ceec1682345-batch-256
   ${PACKAGE_NAME}_model-fd05da43-5e37-4fa0-88f8-3ceec1682345-batch-2048
+  ${PACKAGE_NAME}_model-9a9515c7-cb68-4c34-b1d2-0e8c0a3620b8
+  ${PACKAGE_NAME}_model-340553d1-e6fe-41b6-b2c7-687c74ccec56
 )
 
 add_dependencies(iree-benchmark-suites
@@ -6614,13 +6614,13 @@ add_dependencies(iree-benchmark-suites
   ${PACKAGE_NAME}_iree-module-aed1ca2855056bcd5b7e51063741685b4a387d9d0574b343e8ddc383b49afc76
   ${PACKAGE_NAME}_iree-module-80a2368e148d9605d98060027b9198dea46efbf050a383784ec5df5e85904757
   ${PACKAGE_NAME}_iree-module-f146632eb124afeb899eeae8aaf5ab6cd9efae22ee9ffb26d34fe1da10049fbe
-  ${PACKAGE_NAME}_iree-module-04ca0a5077b7dd5ace66d803c9b822dff3428b24e7620a61995aff0907af9533
-  ${PACKAGE_NAME}_iree-module-deafafd0926321a4b8e4dc73ed4a30b2ed9317d26488246461415be2ee857eb1
-  ${PACKAGE_NAME}_iree-module-bdd904cc5614ebf77609c7802a2dfc09f139aee2a247a247d10d320de72b0e28
-  ${PACKAGE_NAME}_iree-module-45565cae821666fd34bca97be2e4cce3bd61e71308785728737d89acbb9bc9d2
-  ${PACKAGE_NAME}_iree-module-c4b43b31944dbd567e48efacfdb33f707eb248538cf70fa7dcf1085c6c7dbd3f
-  ${PACKAGE_NAME}_iree-module-c8ec2db5ee884e0af17814e61b13d7f7f1f2d4f7028e8c1920d0d968c27de2bb
-  ${PACKAGE_NAME}_iree-module-9470c46965ea67794da45496454c82eade29b5a519d8037b1314738621e02260
+  ${PACKAGE_NAME}_iree-module-bf4bda91fb17ec7f3402e7b301cb3ab0b7a9b0b00d8cee29fd4cfa46262a5ea1
+  ${PACKAGE_NAME}_iree-module-9900b1a0c52b31fc38f1d82ff088102f7131ecbb3fc1b8274929481337d031c5
+  ${PACKAGE_NAME}_iree-module-25f1a116fad68b01401dfbd8462c7b2729ef2d504df0954509cd488cd5da17a1
+  ${PACKAGE_NAME}_iree-module-89643b9db9da0c7b822ba8e2ead4ec12fc3093dbde9b7a8570de1be3d46bd54b
+  ${PACKAGE_NAME}_iree-module-c16715c83936394998fe81f8d33f6e7901f17ff662dfd2941a3982f85c3a9e17
+  ${PACKAGE_NAME}_iree-module-7ba873f0f155e857b45f991cbb4e8776f8b137d59ddc5f81a7a23ed2a48eecc9
+  ${PACKAGE_NAME}_iree-module-374d3219ba3a0064fc5eccb0857f9ae7c37ad2c8183c930b59b33a6a6248d109
   ${PACKAGE_NAME}_iree-module-44e0517dcee4f94b6f7ea1dd6b5492ee9752b4a7cab27d3e5e5ad38ef23071c6
   ${PACKAGE_NAME}_iree-module-c0ea83b865fd0c67a3013086ef2250464e2aecfc615a95170ef46128d2e57208
   ${PACKAGE_NAME}_iree-module-c91ccf1fb3086a35cffd2e8bed6be929574a9ba626d9f271f577503ad07e3509
@@ -6787,13 +6787,13 @@ add_dependencies(iree-e2e-compile-stats-suites
   ${PACKAGE_NAME}_iree-module-c9a7c5b08db10ed782045b6810cb4ee157da9e95590456d3839c06163ee30fa7
   ${PACKAGE_NAME}_iree-module-838cc09b422958a332fd76cf12a6a2a95b8346c8e8d2fe7b15cb5ace4c20581e
   ${PACKAGE_NAME}_iree-module-8231a286cdc63a48f3f70a12ab5a182142c00cbebaccdc79e35ca552f02422e7
-  ${PACKAGE_NAME}_iree-module-25ad2815eb690276e9c2183aaafaf17a3df734bb6164071ad92dbf1e7faf7509
-  ${PACKAGE_NAME}_iree-module-65586f1e5b51439dd951529c35fa9000a928f90039cc6cfb66d5c81d07a6c62b
-  ${PACKAGE_NAME}_iree-module-8b19868be1c797cb585551c871c4171e78817e0efc49d30d91b9d722be283de9
-  ${PACKAGE_NAME}_iree-module-c2085883b1f5c767f37508ab998a4bcd17d169fe6a5197d28e4dca8772c90253
-  ${PACKAGE_NAME}_iree-module-88b6b5f712cd2f40d07a136e7f911c05b976c390e07f104c970292dee9a77e9a
-  ${PACKAGE_NAME}_iree-module-925cdb19f2aa31a1907c81b5a9e179d91280c77b08a039c1cbf146f71683dde9
-  ${PACKAGE_NAME}_iree-module-3c94ab45ad76bd8b2083729b65340b987da3247c854faf7d06431cb05a3b0a23
+  ${PACKAGE_NAME}_iree-module-1ee530ad72c5711ee3abf11b27eed04e11d261fb6c0d23a6cb68c80c1a42580b
+  ${PACKAGE_NAME}_iree-module-38e99a06cd01399fe48cd9d860f65474e4fd7df1b3aca491766ff5f825315a79
+  ${PACKAGE_NAME}_iree-module-db86dfb7ef5e59b31bf513df65fffd397f49e3fe3b5c03149140ccf3b6b2f821
+  ${PACKAGE_NAME}_iree-module-89966a2ac764b543e721d822acdbe015526866e0a8d56a6782f240eeb3cddea1
+  ${PACKAGE_NAME}_iree-module-6da0542e65f9e5eff1bc142506866aec435b931b36eb8e86139f79b4945863fd
+  ${PACKAGE_NAME}_iree-module-f55259e9c9778885d48b20cfb18242984fa9dde9840fa0f92c7de379c88c8230
+  ${PACKAGE_NAME}_iree-module-d931d256d015f057a71fb67c6c7d7d4099910286d5bbcd6c1c71b43b2b3756e8
   ${PACKAGE_NAME}_iree-module-9b4e60a06d92bebe93ee7824e1990d10bce55062bd896d3f15604881c446e528
   ${PACKAGE_NAME}_iree-module-52ce6f195b382daa71816b068bc1d13541397d6da097276699dbaffa95de35d7
   ${PACKAGE_NAME}_iree-module-973d25bc365d73084bfa35f317464f59a9b00f67d732733b4eaa476a418ecd95
