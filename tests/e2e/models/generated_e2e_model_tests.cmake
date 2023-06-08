@@ -14,7 +14,6 @@ iree_benchmark_suite_module_test(
   RUNNER_ARGS
     "--function=main"
     "--input=1x224x224x3xf32=0"
-    "--device_allocator=caching"
 )
 
 iree_benchmark_suite_module_test(
@@ -26,7 +25,6 @@ iree_benchmark_suite_module_test(
   RUNNER_ARGS
     "--function=main"
     "--input=1x224x224x3xui8=0"
-    "--device_allocator=caching"
 )
 
 iree_benchmark_suite_module_test(
@@ -39,7 +37,6 @@ iree_benchmark_suite_module_test(
   RUNNER_ARGS
     "--function=main"
     "--input=1x257x257x3xf32=0"
-    "--device_allocator=caching"
     "--expected_f32_threshold=0.001"
 )
 
@@ -54,6 +51,5 @@ iree_benchmark_suite_module_test(
   RUNNER_ARGS
     "--function=main"
     "--input=1x96x96x1xi8=0"
-    "--device_allocator=caching"
 )
 

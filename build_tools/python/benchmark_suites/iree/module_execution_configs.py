@@ -24,7 +24,7 @@ def _with_caching_allocator(
       tags=tags,
       loader=loader,
       driver=driver,
-      extra_flags=["--device_allocator=caching"] + extra_flags)
+      extra_flags=extra_flags)
 
 
 ELF_LOCAL_SYNC_CONFIG = _with_caching_allocator(

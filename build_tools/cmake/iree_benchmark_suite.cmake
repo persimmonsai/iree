@@ -410,7 +410,6 @@ function(iree_benchmark_suite)
       # the generated artifacts.
       set(_FLAG_FILE "${_RUN_SPEC_DIR}/flagfile")
       set(_ADDITIONAL_ARGS "${_RULE_RUNTIME_FLAGS}")
-      list(APPEND _ADDITIONAL_ARGS "--device_allocator=caching")
       set(_ADDITIONAL_ARGS_CL "--additional_args=\"${_ADDITIONAL_ARGS}\"")
       file(RELATIVE_PATH _MODULE_FILE_FLAG "${_RUN_SPEC_DIR}" "${_VMFB_FILE}")
       add_custom_command(
