@@ -295,20 +295,15 @@ static UploadResult buildStagingUpload(
         /*uninitialized=*/builder.getUnitAttr(), affinityAttr);
 
     uploadResult.allocations.push_back({
-        allocOp.getResults().front(),
-        allocOp.getStorageSizes().front(),
+        allocOp.getResult(),
+        allocOp.getStorageSize(),
     });
 
     // Queue copy for processing below.
     Copy copy{
-        storageResource.loc,
-        mapOp.getResult(),
-        mapOp.getResultSize(),
-        indexSet.get(0),
-        allocOp.getResults().front(),
-        allocOp.getStorageSizes().front(),
-        indexSet.get(0),
-        totalLength,
+        storageResource.loc, mapOp.getResult(),   mapOp.getResultSize(),
+        indexSet.get(0),     allocOp.getResult(), allocOp.getStorageSize(),
+        indexSet.get(0),     totalLength,
     };
     capturedResources.push_back(copy.source);
     capturedResourceSizes.push_back(copy.sourceSize);
