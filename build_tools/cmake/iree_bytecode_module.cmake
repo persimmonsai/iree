@@ -133,7 +133,7 @@ function(iree_bytecode_module)
   if(_RULE_TIMEOUT)
     list(APPEND _TIMEOUT_COMMAND "${_RULE_TIMEOUT}")
   else()
-    list(APPEND _TIMEOUT_COMMAND "1h")
+    list(APPEND _TIMEOUT_COMMAND "10m")
   endif()
 
   add_custom_command(
