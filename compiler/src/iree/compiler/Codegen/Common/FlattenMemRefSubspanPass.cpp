@@ -127,7 +127,7 @@ static Value createTotalElementCountValue(ShapedType type,
   }
 
   int dynamicDimIndex = 0;
-  SmallVector<Value> dims;
+  SmallVector<OpFoldResult> dims;
   auto shape = type.getShape();
   AffineExpr sizeExpr = getAffineConstantExpr(1, context);
   for (int i = 0; i < shape.size(); ++i) {
@@ -135,7 +135,7 @@ static Value createTotalElementCountValue(ShapedType type,
     if (ShapedType::isDynamic(shape[i])) {
       dims.push_back(dynamicDims[dynamicDimIndex++]);
     } else {
-      dims.push_back(builder.create<arith::ConstantIndexOp>(loc, shape[i]));
+      dims.push_back(builder.create<arith::ConstantIndexOp>(loc, shape[i]).getValue());
     }
   }
   return affine::makeComposedAffineApply(builder, loc, sizeExpr, dims);
