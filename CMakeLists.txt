@@ -1162,3 +1162,5 @@ iree_add_install_target(
   COMPONENT IREETools-Runtime
   ADD_TO iree-install-tools
 )
+
+add_subdirectory(third_party/systolic-compiler/iree-module)
